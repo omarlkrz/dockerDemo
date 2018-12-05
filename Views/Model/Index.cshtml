@@ -1,0 +1,232 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutGeneral.cshtml";
+}
+
+
+
+
+
+
+    
+
+    
+
+<div class="container body-content">
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="col-md-12">
+
+                <ul class="titleModel">
+                    <p>Modèle</p>
+                </ul>
+            </div>
+
+            <div class="col-md-12">
+
+                <ul class="list-group">
+                    <h5 class="list-group-item list-group-item-heading-leftSide" >AJOUTER | MODIFIER</h5>
+                    <li class="list-group-item list-group-item-info">
+                        <div class="input-group">
+                            <div class="input-group-btn">
+                                <!-- Button and dropdown menu -->
+                            </div>
+                            <input type="text" id="idCodeModelUpdate" class="form-control" aria-label="..." placeholder="Id Modele">
+
+                            <select id="idTypeDevUpdate" class="form-control" aria-label="..." placeholder="Type">
+                                <option value="0"> Type Device</option>
+
+
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-btn">
+                                <!-- Button and dropdown menu -->
+                            </div>
+                            <select id="idVendorUpdate" class="form-control" aria-label="..." placeholder="Fabricant">
+                                <option value="0"> Fabricant..</option>
+
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-btn">
+                                <!-- Button and dropdown menu -->
+                            </div>
+                            <input type="text" id="idDescriptionUpdate" class="form-control" aria-label="..." placeholder="Déscription">
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-btn">
+                                <!-- Button and dropdown menu -->
+                            </div>
+                            <select id="idSNDetUpdate" class="form-control" aria-label="..." placeholder="SN détectable">
+                                <option value="1">SN Detectable</option>
+
+                                <option value="0"> SN Non detectable</option>
+
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-btn">
+                                <!-- Button and dropdown menu -->
+                            </div>
+                            <select id="idModelDetUpdate" class="form-control" aria-label="..." placeholder="Modèle détectable">
+
+                                <option value="1"> Modele Detectable</option>
+                                <option value="0"> Modele Non detectable</option>
+
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-btn">
+                                <!-- Button and dropdown menu -->
+                            </div>
+                            <input type="text" id="idProprieteUpdate" class="form-control" aria-label="..." placeholder="Propriété">
+                        </div>
+                        <div class="list-group-item-heading btn-bg">
+                            <a href="#" class="btn-ajuster btn btn-default" role="button">Annuler</a>
+                            <a href="#" id="idBtnUpdate" class="btn-ajuster btn btn-default" role="button">Enregistrer</a>
+                        </div>
+                    </li>
+
+                </ul>
+
+
+
+            </div>
+        </div>
+        <div class="col-md-9">
+
+            <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="list-group-item-heading">Filtre</div>
+
+                <!-- Table -->
+               
+                <table class="table">
+                    <tr>
+                        <th>Type</th>
+                        <th>Fabricant</th>
+                        <th>Description</th>
+                        <th>SN détectable</th>
+                        <th>Modèle détectable</th>
+                        <th>Propriété</th>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="dropdown">
+
+
+                                <select id="idTypeDevice" aria-labelledby="dropdownMenu1" class="form-control" aria-label="...">
+                                    <option value="0"> Choisir</option>
+
+                                </select>
+
+
+                            </div>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+
+
+
+                                <select id="idVendors" aria-labelledby="dropdownMenu1" class="form-control" aria-label="...">
+                                    <option value="0"> Choisir</option>
+
+                                </select>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="input-group-btn">
+                                <Input type="text" id="idDescription" class="form-control" placeholder="Description" />
+
+                            </div>
+                        </td>
+                        <td>
+
+
+                            <select name="SNDetectable" id="idSNDetectable" class="form-control" aria-label="...">
+                                <option value="0">Tout</option>
+                                <option value="1"> Detectable </option>
+                                <option value="2"> Non detectable</option>
+                            </select>
+
+                        </td>
+
+
+                        <td>
+
+                            <select name="ModelDetectable" id="idModelDetectable" class="form-control" aria-label="...">
+                                <option value="0">Tout</option>
+                                <option value="1"> Detectable </option>
+                                <option value="2"> Non detectable</option>
+                            </select>
+                        </td>
+                        <td>
+                            <div class="input-group">
+                                <div class="input-group-btn">
+                                    <!-- Button and dropdown menu -->
+                                </div>
+                                <input type="text" id="idPropriete" class="form-control" aria-label="..." placeholder="Propriété">
+                            </div>
+                        </td>
+
+
+                    </tr>
+                </table>
+
+                <div class="list-group-item-heading btn-bg">
+                    <a href="#" class="btn-ajuster btn btn-default" id="idRecherche" role="button">Rechercher</a>&nbsp;
+                    <a href="#" class="btn-ajuster btn btn-default" role="button">Annuler le filtre</a>&nbsp;
+                    <a href="#" class="btn-ajuster btn btn-default" role="button">Imprimer</a>
+                </div>
+
+
+            </div>
+
+            <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="list-group-item-heading">Liste de modèles</div>
+
+                <!-- Table -->
+                <table class="table" id="idModels">
+
+                    <tr>
+                        <th></th>
+                        <th onclick="sortTable2(1)">Type</th>
+                        <th onclick="sortTable2(2)">Fabricant</th>
+                        <th onclick="sortTable2(3)">Modèle</th>
+                        <th onclick="sortTable2(4)">SN détectable</th>
+                        <th onclick="sortTable2(5)">Modèle détectable</th>
+                        <th onclick="sortTable2(6)">Propriété</th>
+
+                    </tr>
+                    <tbody id="idTBody"></tbody>
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr />
+    <footer></footer>
+</div>
+
+<script>
+    getTypesDevices();
+    getVendors();
+    getModels();
+    update();
+</script>
+
+
+
+
+
+
+
+

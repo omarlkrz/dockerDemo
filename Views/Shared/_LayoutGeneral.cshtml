@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+
+    <script src="~/js/model.js"></script>
+    <script src="~/js/equipments.js"></script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebApi10</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/lib/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/StyleSheet.css" />
+
+</head>
+<body>
+   
+    <div class="container body-content">
+        <div class="container">
+            <!--<nav class="navbar navbar-default">-->
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">SGIPI</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <!--<li class="active"><a href="#">MODÈLE <span class="sr-only">(current)</span></a></li>-->
+                            <li><a id="lkModele" href="#">MODÈLE </a></li>
+                            <li><a id="lkFabricant" href="#">FABRICANT </a></li>
+                            <li><a id="lkLocal" href="#">LOCAL </a></li>
+                            <li><a id="lkUtilisateur" href="#">UTILISATEUR </a></li>
+                            <li><a href="#">HISTORIQUE </a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">POSTE <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Poste</a></li>
+                                    <li><a href="#">Liste de postes</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">LOGS </a></li>
+                        </ul>
+                        <div class="nav navbar-nav navbar-right">
+                            <button type="submit" class="btn btn-default btn-topNav">Accueil</button>
+                            <button type="submit" class="btn btn-default btn-topNav">Quitter</button>
+                        </div>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+
+        </div>
+        @RenderBody()
+        <hr />
+        <footer></footer>
+    </div>
+
+    <environment include="Development">
+       
+    </environment>
+   
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

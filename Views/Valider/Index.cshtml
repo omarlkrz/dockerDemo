@@ -1,0 +1,151 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutGeneral.cshtml";
+}
+
+<script>
+    getEquipments();
+
+</script>
+
+<<!-- navbar navbar-inverse /////////////////////////////////////////////////////////////////// -->
+<div class="container body-content">
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="col-md-12">
+
+                <ul class="titleModel">
+                    <p>Validation d'inventaire</p>
+                </ul>
+            </div>
+
+            <div class="col-md-12">
+
+                <ul class="list-group">
+                    <h5 class="list-group-item list-group-item-heading-leftSide">OPTIONS</h5>
+                    <li class="list-group-item list-group-item-info">Créer un modèle</li>
+                    <li class="list-group-item list-group-item-info">Ajouter un équipement</li>
+                    <li class="list-group-item list-group-item-info">Retirer un équipement</li>
+
+                </ul>
+
+
+
+            </div>
+        </div>
+        <div class="col-md-9">
+
+            <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="list-group-item-heading">Équipement correctement détecté</div>
+
+                <!-- Table -->
+                <table class="table">
+                    <tr>
+                        <th></th>
+                        <th>Type</th>
+                        <th>Modèle</th>
+                        <th>Fabricant</th>
+                        <th>No. de série</th>
+                        <th>No. inventaire</th>
+
+                    </tr>
+                    <tbody id="idTBodyCorrect">
+                        <tr>
+                            <td>
+                                <span class="input-group-addon">
+                                    <input type="checkbox" aria-label="...">
+                                </span>
+                            </td>
+                            <td>Moniteur</td>
+                            <td>LD17B303</td>
+                            <td>Toshiba</td>
+                            <td>09MYG22N0122</td>
+                            <td>6553</td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="input-group-addon">
+                                    <input type="checkbox" aria-label="...">
+                                </span>
+                            </td>
+                            <td>Moniteur</td>
+                            <td>LD17B303</td>
+                            <td>Toshiba</td>
+                            <td>09MYG22N0122</td>
+                            <td>6553</td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="input-group-addon">
+                                    <input type="checkbox" aria-label="...">
+                                </span>
+                            </td>
+                            <td>Moniteur</td>
+                            <td>LD17B303</td>
+                            <td>Toshiba</td>
+                            <td>09MYG22N0122</td>
+                            <td>6553</td>
+
+                    </tbody>
+
+
+                </table>
+
+                <div class="list-group-item-heading btn-bg">
+                    <a href="#" class="btn-ajuster btn btn-default" role="button">Enregistrer</a>&nbsp;
+                </div>
+
+
+            </div>
+
+            <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="list-group-item-heading">Équipement détecté sans numéro de Série</div>
+
+                <!-- Table -->
+                <table class="table">
+                    <tr>
+                        <th></th>
+                        <th>Type</th>
+                        <th>Modèle</th>
+                        <th>Fabricant</th>
+                        <th>No. de série</th>
+                        <th>No. inventaire</th>
+
+                    </tr>
+                    <tbody id="idTBodyIncorrect">
+                        <tr>
+                            <td>
+                                <span class="input-group-addon">
+                                    <input type="checkbox" aria-label="...">
+                                </span>
+                            </td>
+                            <td>Moniteur</td>
+                            <td>LD17B303</td>
+                            <td>Toshiba</td>
+                            <td></td>
+                            <td>6553</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="list-group-item-heading btn-bg">
+                    <a href="#" class="btn-ajuster btn btn-default" role="button">Enregistrer</a>&nbsp;
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr />
+    <footer></footer>
+</div>
+
+

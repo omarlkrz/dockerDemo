@@ -1,0 +1,196 @@
+﻿body {
+}
+
+/* Barre de NAVIGATION ================================================================================ */
+
+.navbar-brand{
+    font-weight: bold;
+    font-size: 2em;
+    color: white !important;
+}
+
+.navbar-right{
+    padding-top: .9em !important;
+}
+
+.btn-topNav{
+    padding: .05em .5em .0em .5em !important;
+    background-color: black;
+    color: #9d9d9d;
+    border-color: #9d9d9d;
+    border-width: 2px;
+}
+
+/*LOGIN 01 ================================================================================ */
+@import "bourbon";
+
+body {
+	background: white !important;	
+}
+
+.form-entete{
+	background-color: black !important;
+    color: white;
+    margin-left: -35px;
+    margin-right: -35px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    letter-spacing: 2px;
+    padding: 0.75em 0.25em 0.15em 0.25em;
+}
+
+.modifPsswd {	
+    text-align: center;
+}
+
+.wrapper {	
+	margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.form-signin {
+  max-width: 380px;
+  padding: 0px 35px 20px 35px;
+  margin: 0 auto;
+  background-color: lightgrey;
+  border: 1px solid rgba(0,0,0,0.1);  
+
+  .form-signin-heading,
+	.checkbox {
+	  margin-bottom: 30px;
+	}
+
+	.form-control {
+	  position: relative;
+	  font-size: 16px;
+	  height: auto;
+	  padding: 10px;
+		@include box-sizing(border-box);
+
+		&:focus {
+		  z-index: 2;
+		}
+	}
+
+	input[type="text"] {
+	  margin-bottom: -1px;
+	  border-bottom-left-radius: 0;
+	  border-bottom-right-radius: 0;
+      
+	}
+
+	input[type="password"] {
+	  margin-bottom: 20px;
+	  border-top-left-radius: 0;
+	  border-top-right-radius: 0;
+	}
+}
+
+/* Validation d'inventaire ================================================================================ */
+
+.titleModel{
+	background-color: lightslategray !important;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    padding: 0.5em 0.25em 0.25em 0.25em;
+    margin-left: -15px;
+    border-radius: 3px;
+    margin-bottom: .6em;
+}
+
+.list-group{
+    margin-left: -15px;
+    background-color: #eee;
+}
+
+
+.list-group-item-heading{
+    font-weight: bold;
+    letter-spacing: .15em;
+    text-align: center;
+    background-color: darkgrey;
+    color: white;
+    text-transform: uppercase;
+    padding: 0.25em;
+    margin-bottom: 0;
+}
+
+.list-group-item-heading-leftSide{
+    font-weight: bold;
+    letter-spacing: .15em;
+    text-align: center;
+    background-color: darkgrey;
+    color: white;
+    text-transform: uppercase;
+    padding: 0.45em;
+    margin-bottom: 0;
+}
+
+.list-group-item-info{
+    background-color: #eee;
+}
+/* TABLE le fond du tableau : couleur  ================================================================================ */
+
+.table{
+    background-color: #eee;    
+}
+
+/* Bouton IMPRIMER etc. ================================================================================ */
+
+
+.btn-bg {
+    background-color: #eee;
+    text-align: right;
+    padding: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.btn-ajuster {
+    text-transform: uppercase;
+    font-family: arial, helvetica, sans-serif;
+    letter-spacing: normal;
+    border-color: darkgrey;
+    border-width: 1px;
+}
+
+/* Checkbox pour enlever la ligne en dessous et au dessus ================================================================================ */
+
+.input-group-addon {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 0;
+  color: #555;
+  text-align: center;
+  background-color: #eee;
+  border: 0px !important;
+  border-radius: 4px;
+}
+
+th {
+    cursor: pointer;
+}
